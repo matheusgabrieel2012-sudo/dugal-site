@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Descubra a coleção Dugal Modas. Confira roupas, conjuntos, bolsas e calçados e consulte a disponibilidade pelo WhatsApp.">
+  <title>Dugal Modas | Seu estilo, sua identidade</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">
+    <span>DUGAL MODAS</span>
+    <p>Seu estilo começa aqui. Consulte nossos modelos pelo WhatsApp.</p>
+  </div>
+
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Dugal Modas - início">
+      <img class="logo-icon" src="images/logo-desenho.png" alt="Símbolo Dugal Modas">
+      <img class="logo-wordmark" src="images/logo-escrita.png" alt="Dugal Modas">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#inicio">Início</a>
+      <a href="#catalogo">Coleção</a>
+      <a href="#sobre">A loja</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a class="nav-cta" href="https://wa.me/5511953368886" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="hero-grid"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow"><span class="red-dot"></span> MODA · ESTILO · PERSONALIDADE</span>
+        <h1>VISTA SUA<br><span>IDENTIDADE.</span></h1>
+        <p>Descubra peças que combinam com você. Explore nossa coleção e consulte preços, tamanhos e disponibilidade diretamente com a Dugal Modas.</p>
+
+        <div class="hero-actions">
+          <a class="button button-red" href="#catalogo">Explorar coleção <span>↘</span></a>
+          <a class="button button-outline" href="https://wa.me/5511953368886" target="_blank" rel="noopener noreferrer">Falar com a loja ↗</a>
+        </div>
+
+        <div class="hero-note"><span></span> ENCONTRE SEU PRÓXIMO LOOK</div>
+      </div>
+
+      <div class="hero-logo-wrap" aria-hidden="true">
+        <div class="hero-ring ring-one"></div>
+        <div class="hero-ring ring-two"></div>
+        <img src="images/logo-desenho.png" alt="" class="hero-logo">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <span class="hero-side-text">DUGAL MODAS · ESTILO SEM LIMITES</span>
+      </div>
+
+      <a class="scroll-cue" href="#catalogo"><span></span> DESCUBRA A COLEÇÃO</a>
+    </section>
+
+    <section class="benefits">
+      <div><b>01</b><span>Modelos selecionados</span></div>
+      <div><b>02</b><span>Atendimento pelo WhatsApp</span></div>
+      <div><b>03</b><span>Consulte tamanhos e estoque</span></div>
+    </section>
+
+    <section class="catalog section" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">ENCONTRE SEU ESTILO</span>
+          <h2>NOSSA <span>COLEÇÃO.</span></h2>
+          <p>Confira os modelos e entre em contato para saber preços e disponibilidade.</p>
+        </div>
+        <div class="catalog-count">
+          <strong id="productCount">11</strong>
+          <span>MODELOS</span>
+        </div>
+      </div>
+
+      <div class="catalog-tools">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Buscar um produto..." aria-label="Buscar produtos">
+        </label>
+
+        <div class="filters" id="filters" aria-label="Filtrar produtos">
+          <button class="filter active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter" data-filter="conjuntos" aria-pressed="false">Conjuntos</button>
+          <button class="filter" data-filter="roupas" aria-pressed="false">Roupas</button>
+          <button class="filter" data-filter="bolsas" aria-pressed="false">Bolsas</button>
+          <button class="filter" data-filter="calcados" aria-pressed="false">Calçados</button>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <h3>Nenhum produto encontrado</h3>
+        <p>Tente outra busca ou selecione uma categoria diferente.</p>
+        <button class="button button-red" id="clearFilters">Ver todos os produtos</button>
+      </div>
+
+      <div class="catalog-footer">
+        <span>GOSTOU DE ALGUM MODELO?</span>
+        <a href="https://wa.me/5511953368886" target="_blank" rel="noopener noreferrer">Consulte pelo WhatsApp ↗</a>
+      </div>
+    </section>
+
+    <section class="editorial" id="sobre">
+      <div class="editorial-visual">
+        <div class="editorial-brand-card">
+          <div class="editorial-brand-glow"></div>
+          <span class="editorial-tag">DUGAL MODAS & ACESSÓRIOS</span>
+          <img src="images/logo-desenho.png" alt="Logo Dugal Modas" class="editorial-logo" loading="lazy">
+          <img src="images/logo-escrita.png" alt="Dugal Modas" class="editorial-wordmark" loading="lazy">
+          <span class="editorial-caption">SEU ESTILO. SUA IDENTIDADE.</span>
+        </div>
+      </div>
+
+      <div class="editorial-content">
+        <span class="eyebrow"><span class="red-dot"></span> MODA DO SEU JEITO</span>
+        <h2>SEU ESTILO.<br>NOSSAS <span>ESCOLHAS.</span></h2>
+        <p>Encontre peças que combinam com você. Explore nossa coleção, escolha seus modelos favoritos e fale com a nossa equipe para consultar preços, tamanhos e disponibilidade.</p>
+        <a class="button button-red" href="#catalogo">Explorar coleção <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="review-section section" id="avaliacoes">
+      <div class="review-card">
+        <div class="review-decoration" aria-hidden="true">★★★★★</div>
+        <span class="eyebrow"><span class="red-dot"></span> SUA OPINIÃO É IMPORTANTE</span>
+        <h2>COMPROU COM A GENTE?<br><span>CONTE SUA EXPERIÊNCIA.</span></h2>
+        <p>Seu feedback ajuda outras pessoas a conhecer a Dugal Modas e nos ajuda a melhorar cada vez mais. Se você já conhece nossa loja do Jardim Jacira, deixe sua avaliação no Google.</p>
+        <div class="review-stars" aria-label="Cinco estrelas ilustrativas">★★★★★</div>
+
+        <a class="button button-red review-button"
+           href="https://www.google.com/maps/place/Dugal+Modas+e+acess%C3%B3rios/@-23.7463457,-46.7971695,17z/data=!4m10!1m2!2m1!1sdugal+modas!3m6!1s0x94ce4d6928932397:0x5a0b3a8af15f684b!8m2!3d-23.7463506!4d-46.7945946!15sCgtkdWdhbCBtb2Rhc5IBDmNsb3RoaW5nX3N0b3Jl4AEA!16s%2Fg%2F11p1_cnw58"
+           target="_blank" rel="noopener noreferrer">
+          Avaliar a loja no Google <span>↗</span>
+        </a>
+
+        <small>O Google abrirá a página da loja. Procure a opção “Avaliações” ou “Escrever avaliação”.</small>
+      </div>
+    </section>
+
+    <section class="contact-section section">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <span class="eyebrow">VAMOS ENCONTRAR SEU LOOK?</span>
+          <h2>SEU PRÓXIMO<br><span>LOOK COMEÇA AQUI.</span></h2>
+          <p>Fale com a equipe da Dugal Modas para tirar dúvidas e consultar os produtos.</p>
+          <a class="button button-red" href="https://wa.me/5511953368886" target="_blank" rel="noopener noreferrer">Conversar no WhatsApp ↗</a>
+        </div>
+        <img src="images/logo-desenho.png" alt="" class="contact-logo" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <a class="brand footer-brand" href="#inicio" aria-label="Dugal Modas - início">
+        <img class="logo-icon" src="images/logo-desenho.png" alt="">
+        <img class="logo-wordmark" src="images/logo-escrita.png" alt="Dugal Modas">
+      </a>
+      <p>Seu estilo, sua identidade.</p>
+      <div class="footer-links">
+        <a href="#catalogo">Coleção</a>
+        <a href="#avaliacoes">Avalie no Google</a>
+        <a href="https://www.instagram.com/dugalmodas_oficial/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="https://wa.me/5511953368886" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="currentYear"></span> Dugal Modas. Todos os direitos reservados.</span>
+      <a href="#inicio">VOLTAR AO TOPO ↑</a>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5511953368886" target="_blank" rel="noopener noreferrer" aria-label="Falar com a Dugal Modas pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 3.1A12.7 12.7 0 0 0 5.1 22.3L3.4 28.6l6.5-1.7A12.8 12.8 0 1 0 16 3.1Zm0 23.1a10.3 10.3 0 0 1-5.2-1.4l-.4-.2-3.9 1 1-3.8-.3-.4A10.3 10.3 0 1 1 16 26.2Zm5.7-7.7c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2-.4.2-.7.1a8.5 8.5 0 0 1-2.5-1.5 9.4 9.4 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.1.8.4 1.5.6 2 .7.9.3 1.7.2 2.3.1.7-.1 1.8-.7 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4Z"/>
+    </svg>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>
